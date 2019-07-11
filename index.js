@@ -1,6 +1,7 @@
 const Discrod = require("discord.js")
 const client = new Discrod.Client()
 const config = require("./config.json")
+const token = process.env.token
 
 //let prefix = "!"
 
@@ -70,3 +71,5 @@ client.on("message", message => {
     message.reply("Je t'aime tellement toi Young, t'es le plus fort, le plus beau, le meilleur, Bisou.")   
         } 
 })
+
+bot.login(token);
